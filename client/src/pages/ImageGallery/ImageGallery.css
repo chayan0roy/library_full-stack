@@ -1,0 +1,130 @@
+.ImageGallery {
+    padding-top: 80px;
+}
+
+.topArea {
+    height: 88vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/backgroundImg/authPageBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.topAboutArea {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 300px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.galaeryArea {
+    background-color: rgba(0, 128, 0, 0.589);
+}
+.navigationTabBar {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.719);
+}
+
+.galleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.galleryWrap .single {
+    width: 320px;
+    cursor: pointer;
+}
+
+.galleryWrap .single img {
+    width: 100%;
+}
+
+.galleryWrap .single img:hover {
+    transform: scale(1.02);
+}
+
+.sliderWrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderWrap .btnClose,
+.sliderWrap .btnPrev,
+.sliderWrap .btnNext {
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.6;
+    color: #fff;
+    z-index: 9999;
+}
+
+.btnNext:hover,
+.btnPrev:hover,
+.btnClose:hover {
+    opacity: 1;
+}
+
+.sliderWrap .btnClose {
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.sliderWrap .btnPrev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    font-size: 40px;
+}
+
+.sliderWrap .btnNext {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    font-size: 40px;
+}
+
+.fullScreenImage {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullScreenImage img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

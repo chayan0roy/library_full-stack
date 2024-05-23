@@ -1,0 +1,27 @@
+.CardSlider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slick-slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-left: 2.5%;
+}
+
+.LeftArrowCls {
+    position: absolute;
+    left: 60px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    z-index: 10;
+}
+.rightArrowCls {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 10;
+}

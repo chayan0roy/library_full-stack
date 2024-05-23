@@ -1,0 +1,32 @@
+.NoticePage {
+    height: 88vh;
+    width: 100%;
+    padding-top: 12vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputNoticeTitle {
+    height: 10vh;
+    font-size: 20px;
+    padding: 0 2%;
+    border: 1px solid black;
+    outline: 1px solid black;
+}
+
+.inputNoticeDetails {
+    height: 50vh;
+    font-size: 20px;
+    padding: 1% 2%;
+    border: 1px solid black;
+    outline: 1px solid black;
+}
+
+.noticeButtonArea {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
