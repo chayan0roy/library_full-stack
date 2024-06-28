@@ -19,6 +19,12 @@ app.use(cookieParser());
 
 app.use('/uploads', express.static('uploads'));
 
+
+app.get('/', async (req, res) => {
+    res.status(200).json({ message: 'Hii Dada, your server is running' });
+});
+
+
 app.use('/Admin', adminRoutes);
 app.use('/User', userRoutes);
 
